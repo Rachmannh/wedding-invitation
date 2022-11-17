@@ -27,18 +27,12 @@ body {
 /* Bottom Nav */
 
 .navbar-expand-lg {
-  display: flex;
-  justify-content: center !important;
-  text-align: center !important;
-  align-items: center !important;
   width: 500px;
   height: 80px;
   border-radius: 10px;
   position: absolute;
-  margin-left: auto;
+  margin-left: 35%;
   margin-right: auto;
-  left: 0;
-  right: 0;
   bottom: 10px !important;
   text-align: center;
 }
@@ -117,16 +111,20 @@ body {
 /* Hero */
 
 #heroSection {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  text-align: center !important;
   position: absolute;
   width: 1440px;
   height: 100vh;
   left: 0px;
   top: 0px;
   background: url(../img/hero-bg.png);
+}
+
+.hero-section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .introducing {
