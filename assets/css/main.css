@@ -27,8 +27,11 @@ body {
 /* Bottom Nav */
 
 .navbar-expand-lg {
+  display: flex;
+  justify-content: center !important;
+  text-align: center !important;
   align-items: center !important;
-  width: 480px;
+  width: 500px;
   height: 80px;
   border-radius: 10px;
   position: absolute;
@@ -69,9 +72,8 @@ body {
 }
 
 .nav-link span {
-  margin-top: 2px;
-  display: flex;
-  text-align: center;
+  margin-top: 5px;
+  text-align: center !important;
   font-size: 14px;
   font-weight: 600;
 }
@@ -92,7 +94,7 @@ body {
     left: 0;
     right: 0;
     bottom: 20px !important;
-    text-align: center;
+    text-align: center !important;
   }
   .menu-icon {
     margin-top: -5px;
@@ -104,8 +106,9 @@ body {
     flex-direction: column !important;
   }
 
-  .nav-link span {
+  .nav-link > span {
     font-size: 14px;
+    text-align: center !important;
   }
 }
 
