@@ -90,6 +90,9 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden !important;
+  }
   #heroSection {
     position: absolute;
     width: 100% !important;
