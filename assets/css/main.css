@@ -21,7 +21,43 @@ html {
 
 body {
   font-family: var(--main-font) !important;
+  height: 120vh;
 }
+
+/* Bottom Nav */
+
+.navbar-expand-lg {
+  width: 700px;
+  height: 60px;
+  border-radius: 10px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 20px !important;
+  text-align: center;
+}
+
+.nav-link {
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-expand-lg {
+    width: 350px !important;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 20px !important;
+    text-align: center;
+  }
+}
+
+/* Bottom Nav End */
 
 /* Hero */
 
@@ -32,10 +68,6 @@ body {
   left: 0px;
   top: 0px;
   background: url(../img/hero-bg.png);
-}
-
-#heroSection img {
-  margin-top: 70px;
 }
 
 .introducing {
@@ -74,7 +106,7 @@ body {
 }
 
 .guest-name {
-  margin-top: 20px;
+  margin-top: 25px;
   font-style: normal;
   font-weight: 700;
   font-size: 34px;
@@ -82,7 +114,7 @@ body {
 }
 
 .guest-note {
-  margin-top: 50px;
+  margin-top: 30px;
   font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 16px;
