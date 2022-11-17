@@ -93,7 +93,7 @@ body {
   #heroSection {
     position: absolute;
     width: 100% !important;
-    height: 680px;
+    height: auto;
     background-repeat: no-repeat !important;
     background: url(../img/hero-bg-mobile.png);
   }
