@@ -22,6 +22,7 @@ html {
 body {
   font-family: var(--main-font) !important;
   height: auto;
+  background-color: #eeefe9 !important;
 }
 
 /* Bottom Nav */
@@ -31,9 +32,9 @@ body {
   height: 80px;
   border-radius: 10px;
   position: absolute;
-  margin-left: 35%;
+  margin-left: auto;
   margin-right: auto;
-  bottom: 10px !important;
+  bottom: 20px !important;
   text-align: center;
 }
 
@@ -43,8 +44,8 @@ body {
 
 .bg-custom {
   background-color: #fcfcfc !important;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .menu-icon {
@@ -111,15 +112,99 @@ body {
 /* Hero */
 
 #heroSection {
-  position: absolute;
-  width: 1440px;
+  width: 100%;
   height: 100vh;
-  left: 0px;
-  top: 0px;
-  background: url(../img/hero-bg.png);
+  position: relative;
+  background-image: url(../img/hero-bg.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 
-.hero-section-1 {
+.hero-part-1 img {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-part-1 p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  font-family: var(--secondary-font);
+}
+
+.hero-part-1 h1 {
+  margin-top: -10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-transform: uppercase;
+}
+
+.hero-part-1 h3 {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.hero-part-2 p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 27px;
+}
+
+.hero-part-2 h1 {
+  margin-top: 20px;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 30px;
+  font-style: normal;
+  font-family: var(--secondary-font);
+}
+
+.hero-part-2 h2 {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 25px;
+}
+
+/* Hero End */
+
+/* Countdown */
+
+#countDownSection {
+  text-align: center;
+}
+
+.countdown-part-1 h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 50px;
+}
+
+.countdown-part-2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.item {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,81 +212,106 @@ body {
   text-align: center;
 }
 
-.introducing {
-  margin-top: -30px;
-  font-family: var(--secondary-font);
-  font-size: 20px;
-  line-height: 23px;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.couple-name {
-  margin-top: -5px;
-  text-transform: uppercase;
-  font-family: var(--main-font);
-  font-size: 48px;
-  line-height: 64px;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.wedding-date {
-  font-family: var(--secondary-font);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 23px;
+.item h4 {
   font-size: 20px;
 }
 
-.guest-greeting {
-  margin-top: 10px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 27px;
+.item .count_down {
+  font-size: 32px;
 }
 
-.guest-name {
-  margin-top: 25px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 28px;
+/* Countdown End */
+
+/* Bride Groom */
+
+#brideGroom {
+  margin-top: 90px;
+  text-align: center;
 }
 
-.guest-note {
-  margin-top: 30px;
-  font-family: var(--secondary-font);
+#brideGroom h1 {
+  font-size: 24px;
+  font-style: normal;
   font-weight: 400;
+  line-height: 32px;
+}
+
+#brideGroom .greetings {
+  margin-top: 20px;
   font-size: 16px;
-  line-height: 18px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    overflow-x: hidden !important;
-  }
-  #heroSection {
-    position: absolute;
-    width: 100% !important;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat !important;
-    background-image: url(../img/hero-bg-mobile.png);
-  }
-  #heroSection img {
-    width: 200px;
-  }
-  .couple-name {
-    margin-top: -5px;
-    text-transform: uppercase;
-    font-family: var(--main-font);
-    font-size: 24px;
-    line-height: 64px;
-    font-weight: 700;
-    font-style: normal;
-  }
+#brideGroom h2 {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  font-weight: 400;
 }
 
-/* Hero End */
+#brideGroom .card {
+  margin-top: 80px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.rounded-circle {
+  width: 320px;
+  height: 320px;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.groom-name {
+  margin-top: -10px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  font-style: normal;
+}
+
+.groom-parent-name {
+  margin-bottom: 5px;
+}
+
+#brideGroom p .change-color {
+  color: purple;
+  font-weight: 600;
+}
+
+.card-social-media {
+  margin-top: -20px;
+}
+
+.card-social-media a {
+  font-size: 20px;
+  margin-right: 10px;
+  text-decoration: none !important;
+  color: #5d70505d;
+}
+
+.card-social-media a:hover {
+  color: #5d7050;
+  transition: all 0.5s;
+}
+
+/* Bride Groom End */
+
+/* Event */
+
+#eventSection {
+  margin-top: 90px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#eventSection .card {
+  width: 11rem !important;
+}
+
+/* Event End */
